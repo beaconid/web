@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Beacon ID - Modern Clothing Brand</title>
+  <!-- Font & Icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet"/>
+  <link href="cart.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Navigation -->
+  <nav>
+   <a class="logo" href="#">BEACON ID.</a>
+   <ul class="nav-links">
+    <li><a href="#">Beranda</a></li>
+    <li><a href="#">Koleksi</a></li>
+    <li><a href="#">Tentang</a></li>
+    <li><a href="#">Kontak</a></li>
+   </ul>
+   <div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+   </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+   <img alt="Background" class="hero-bg" src="foto/1.jpg"/>
+   <div class="hero-content" data-aos="fade-up">
+    <h1 class="hero-title">BEACON ID</h1>
+    <h2 class="hero-subtitle">Redefining Modern Style</h2>
+    <p class="hero-description">
+     Beacon ID adalah brand clothing premium yang menggabungkan gaya minimalis dengan sentuhan modern.
+     Kami menciptakan pakaian berkualitas tinggi untuk mereka yang menghargai desain elegan, kenyamanan,
+     dan keberlanjutan. Setiap koleksi kami dirancang dengan teliti untuk mengekspresikan kepribadian
+     Anda dan meningkatkan penampilan sehari-hari.
+    </p>
+    <button class="cta-btn">Beli Sekarang</button>
+   </div>
+  </section>
+  
+  <!-- Featured Section -->
+  <section class="featured">
+   <h2 class="section-title" data-aos="zoom-in">KOLEKSI TERBARU</h2>
+   <div class="featured-grid">
+    <div class="featured-item" data-aos="fade-up" data-aos-delay="100">
+     <img alt="Product 1" class="featured-img" src="foto/prdc1.jpg"/>
+     <h3 class="featured-title">Beacon ID. | IONEX VORTEX </h3>
+     <p class="featured-price">Rp ***.000</p>
+     <button class="add-to-cart-btn" data-name="Beacon ID. | Ionex Vortex Jaket" data-price="***000">
+      <span class="btn-text">Cooming Soon</span>
+      <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+     </button>
+    </div>
+    <div class="featured-item" data-aos="fade-up" data-aos-delay="200">
+     <img alt="Product 2" class="featured-img" src="foto/prdc2.jpg"/>
+     <h3 class="featured-title">Beacon ID. | HΞXRUN TSHIRT</h3>
+     <p class="featured-price">Rp ***.000</p>
+     <button class="add-to-cart-btn" data-name="Beacon ID | HΞXRUN TSHIRT" data-price="***000">
+      <span class="btn-text">Cooming Soon</span>
+      <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span>
+     </button>
+    </div>
+   </div>
+  </section>
+  
+  <!-- About Section -->
+  <section class="about">
+   <div class="about-content" data-aos="fade-right">
+    <img alt="About Image" class="about-img" src="foto/logo.png"/>
+    <div class="about-text">
+     <h2 class="about-title">CERITA KAMI</h2>
+     <p class="about-description">
+      Didirikan pada tahun 2023, Beacon ID lahir dari hasrat untuk menciptakan pakaian yang
+      menggabungkan estetika minimalis dengan kualitas premium. Nama kami terinspirasi dari
+      konsep mercusuar (beacon) yang menjadi panduan dan inspirasi dalam industri fashion.
+     </p>
+     <p class="about-description">
+      Setiap produk Beacon ID dirancang dengan fokus pada detail, menggunakan bahan berkualitas
+      terbaik, dan diproduksi secara etis. Kami percaya bahwa fashion bukan hanya tentang penampilan,
+      tetapi juga tentang nilai dan dampak yang kita berikan pada dunia.
+     </p>
+    </div>
+   </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+   <div class="footer-logo">BEACON ID.</div>
+   <ul class="footer-links">
+    <li><a href="#">Instagram</a></li>
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">TikTok</a></li>
+   </ul>
+   <p class="footer-text">© 2025 Beacon ID. All Rights Reserved.</p>
+  </footer>
+  
+  <!-- Cart Popup Notification -->
+  <div class="cart-popup" id="cart-popup">
+   <div class="cart-popup-icon"><i class="fas fa-check-circle"></i></div>
+   <div class="cart-popup-message">Produk ditambahkan ke keranjang!</div>
+  </div>
+  
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cartModal">
+   <div class="cart-content">
+    <h3>Keranjang Belanja</h3>
+    <div id="cartItems"></div>
+    <div class="cart-total">Total: <span id="cartTotal">Rp 0</span></div>
+    <button id="checkoutBtn">Checkout via WhatsApp</button>
+    <button id="closeCart">Tutup</button>
+   </div>
+  </div>
+  
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init();
+  </script>
+  <script src="script.js"></script>
+ </body>
+</html>
